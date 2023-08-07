@@ -66,48 +66,13 @@ function blank_theme_register_required_plugins()
 			'name'               => 'Advanced Custom Fields Pro', // The plugin name.
 			'slug'               => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
 			'source'             => dirname(__FILE__) . '/advanced-custom-fields-pro.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-			'force_deactivation' => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 		),
 		array(
-			'name' 				=> 'Contact Form 7',
-			'slug' 				=> 'contact-form-7',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'Yoast SEO',
-			'slug' 				=> 'wordpress-seo',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'TranslatePress',
-			'slug' 				=> 'translatepress-multilingual',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'WooCommerce',
-			'slug' 				=> 'woocommerce',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'W3 Total Cache',
-			'slug' 				=> 'w3-total-cache',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'Editor Clássico',
-			'slug' 				=> 'classic-editor',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'Posts Types Order',
-			'slug' 				=> 'post-types-order',
-			'required' 			=> false,
-		),
-		array(
-			'name' 				=> 'Flamingo',
-			'slug' 				=> 'flamingo',
+			'name' 				=> 'JWT Authentication for WP REST API',
+			'slug' 				=> 'jwt-authentication-for-wp-rest-api',
 			'required' 			=> false,
 		),
 

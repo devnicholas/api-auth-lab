@@ -28,8 +28,8 @@ $autoload->load();
 
 $theme = new ThemeSetup();
 $theme->setMenus([
-    'menu-primary' => 'Menu primário',
-    'menu-footer' => 'Menu do rodapé',
+    // 'menu-primary' => 'Menu primário',
+    // 'menu-footer' => 'Menu do rodapé',
 ]);
 $theme->setThemeSupport([
     'title-tag',
@@ -55,8 +55,11 @@ add_action('wp_enqueue_scripts', function () {
     $themeEnqueue->enqueue();
 });
 
-add_action('after_setup_theme', function() {
-    $defaultPages = new DefaultPages();
-    $defaultPages->setPages(['Home']);
-    $defaultPages->create();
-});
+// add_action('after_setup_theme', function() {
+//     $defaultPages = new DefaultPages();
+//     $defaultPages->setPages(['Home']);
+//     $defaultPages->create();
+// });
+
+define('JWT_AUTH_SECRET_KEY', 'your-top-secret-key');
+define('JWT_AUTH_CORS_ENABLE', true);
